@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="mail_channel_view_form_sql_button" model="ir.ui.view">
+        <field name="name">mail.channel.form +SQL-button</field>
+        <field name="model">mail.channel</field>
+        <field name="inherit_id" ref="mail.mail_channel_view_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button name="get_new_followers" type="object" class="oe_stat_button" icon="fa-play"
+                        attrs="{'invisible': [('id', '!=', 1)]}">SQL query
+                </button>
+            </div>
+        </field>
+    </record>
+
+</odoo>
