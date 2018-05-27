@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <template id="snippet_5images" name="5 images snippet">
-      <section class="snippet_5images">
+    <template id="snippet_6images" name="6 images snippet">
+      <section class="snippet_6images">
         <div class="container text-center">
           <div class="row">
             <a href="/blog/1/post/1" class="col-md-2">
@@ -31,7 +31,7 @@
 
     <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
       <xpath expr="//div[@id='snippet_content']//t[@t-snippet][last()]" position="after">
-        <t t-snippet="task_7.snippet_5images"
+        <t t-snippet="task_7.snippet_6images"
            t-thumbnail="/website/static/src/img/blocks/block_references.png"/>
       </xpath>
     </template>
