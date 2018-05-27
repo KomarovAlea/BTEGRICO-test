@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="website_sale_stock_product" inherit_id="website_sale.product" priority="4">
+    <xpath expr="//div[@id='product_details']" position="inside">
+        <t t-if="product.website_features">
+            <hr />
+            <h4>Features:</h4>
+            <p t-field='product.website_features'  class="text-muted"/>
+        </t>
+        <t t-if="product.website_composition">
+            <hr />
+            <h4>Composition:</h4>
+            <p t-field='product.website_composition'  class="text-muted"/>
+        </t>
+        <t t-if="product.website_using" >
+            <hr />
+            <h4>Using:</h4>
+            <p t-field='product.website_using' class="text-muted"/>
+        </t>
+    </xpath>
+  </template>
+
+</odoo>

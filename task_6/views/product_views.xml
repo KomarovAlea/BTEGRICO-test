@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="product_template_add_fields_view">
+        <field name="name">product.template.product.website.add_fields</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="website_sale.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <group name="description" position="after">
+                <group>
+                    <group string="Features description for the website">
+                        <field name="website_features" placeholder="This note will show up  on website (e.g. features...)." nolabel="1"/>
+                    </group>
+                    <group string="Composition description for the website">
+                        <field name="website_composition" placeholder="This note will show up  on website (e.g. composition...)." nolabel="1"/>
+                    </group>
+                    <group string="Using description for the website">
+                        <field name="website_using" placeholder="This note will show up  on website (e.g. using...)." nolabel="1"/>
+                    </group>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
